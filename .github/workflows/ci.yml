@@ -1,0 +1,11 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+- name: Run markdown lint
+  run: |
+    npm install remark-cli remark-preset-lint-consistent
+    npx remark . --use remark-preset-lint-consistent --frail
+    
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3
