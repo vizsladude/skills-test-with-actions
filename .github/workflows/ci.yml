@@ -1,7 +1,7 @@
 # This is a basic workflow to help you get started with Actions
 name: CI
 
-_underscore_
+
 
 - name: Run markdown lint
   run: |
@@ -11,4 +11,4 @@ _underscore_
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
-   needs: get_current_step
+   _underscore_ _FIX_
